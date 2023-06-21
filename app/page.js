@@ -6,5 +6,7 @@ export default async function Home() {
   let result = await db.collection('post').find().toArray();
   console.log(result);
 
+  // await fetch('/URL', { cache: 'force-cache' });
+
   return <div>안녕</div>;
 }
